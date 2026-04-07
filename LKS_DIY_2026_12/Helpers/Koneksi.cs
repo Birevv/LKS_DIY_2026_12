@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LKS_DIY_2026_12.Helpers
 {
-    public static class DbConnection
+    public static class Koneksi
     {
-        private static string connectionString = "Data Source=BIRE;Initial Catalog=DIY_SMART;Integrated Security=True;TrustServerCertificate=True";
+        private static string connectionString = @"Server=DESKTOP-DV8SGV8\SQLEXPRESS;Initial Catalog=DIY_SMART;Integrated Security=True;TrustServerCertificate=True";
 
         public static SqlConnection GetConn()
         {

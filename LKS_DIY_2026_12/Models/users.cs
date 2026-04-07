@@ -12,9 +12,9 @@ namespace LKS_DIY_2026_12.Models
     public class users
     {
         public int id { get; set; }
-        public enum tipe_user { get; set; }
+        public string tipe_user { get; set; }
         public string nama { get; set; }
-        public string alamat { get; set;}
+        public string alamat { get; set; }
         public string email { get; set; }
         public string telepon { get; set; }
         public string password { get; set; }
