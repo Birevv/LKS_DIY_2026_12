@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_KelUser = new System.Windows.Forms.Button();
-            this.btn_KelLaporan = new System.Windows.Forms.Button();
-            this.btn_Activity = new System.Windows.Forms.Button();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_Activity = new System.Windows.Forms.Button();
+            this.btn_KelLaporan = new System.Windows.Forms.Button();
+            this.btn_KelUser = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.cb_Tipe = new System.Windows.Forms.ComboBox();
             this.tb_username = new System.Windows.Forms.TextBox();
             this.tb_nama = new System.Windows.Forms.TextBox();
@@ -43,10 +44,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.alamat = new System.Windows.Forms.TextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,44 +68,19 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // iconPictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(154, 205);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin";
-            // 
-            // btn_KelUser
-            // 
-            this.btn_KelUser.Location = new System.Drawing.Point(119, 302);
-            this.btn_KelUser.Name = "btn_KelUser";
-            this.btn_KelUser.Size = new System.Drawing.Size(172, 46);
-            this.btn_KelUser.TabIndex = 1;
-            this.btn_KelUser.Text = "Kelola User";
-            this.btn_KelUser.UseVisualStyleBackColor = true;
-            // 
-            // btn_KelLaporan
-            // 
-            this.btn_KelLaporan.Location = new System.Drawing.Point(119, 373);
-            this.btn_KelLaporan.Name = "btn_KelLaporan";
-            this.btn_KelLaporan.Size = new System.Drawing.Size(172, 46);
-            this.btn_KelLaporan.TabIndex = 2;
-            this.btn_KelLaporan.Text = "Kelola Laporan";
-            this.btn_KelLaporan.UseVisualStyleBackColor = true;
-            this.btn_KelLaporan.Click += new System.EventHandler(this.btn_KelLaporan_Click);
-            // 
-            // btn_Activity
-            // 
-            this.btn_Activity.Location = new System.Drawing.Point(119, 442);
-            this.btn_Activity.Name = "btn_Activity";
-            this.btn_Activity.Size = new System.Drawing.Size(172, 46);
-            this.btn_Activity.TabIndex = 3;
-            this.btn_Activity.Text = "Log Activity";
-            this.btn_Activity.UseVisualStyleBackColor = true;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Salmon;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Shopify;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Salmon;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 148;
+            this.iconPictureBox1.Location = new System.Drawing.Point(130, 45);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(148, 148);
+            this.iconPictureBox1.TabIndex = 5;
+            this.iconPictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -115,6 +92,45 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btn_Activity
+            // 
+            this.btn_Activity.Location = new System.Drawing.Point(119, 442);
+            this.btn_Activity.Name = "btn_Activity";
+            this.btn_Activity.Size = new System.Drawing.Size(172, 46);
+            this.btn_Activity.TabIndex = 3;
+            this.btn_Activity.Text = "Log Activity";
+            this.btn_Activity.UseVisualStyleBackColor = true;
+            // 
+            // btn_KelLaporan
+            // 
+            this.btn_KelLaporan.Location = new System.Drawing.Point(119, 373);
+            this.btn_KelLaporan.Name = "btn_KelLaporan";
+            this.btn_KelLaporan.Size = new System.Drawing.Size(172, 46);
+            this.btn_KelLaporan.TabIndex = 2;
+            this.btn_KelLaporan.Text = "Kelola Laporan";
+            this.btn_KelLaporan.UseVisualStyleBackColor = true;
+            this.btn_KelLaporan.Click += new System.EventHandler(this.btn_KelLaporan_Click);
+            // 
+            // btn_KelUser
+            // 
+            this.btn_KelUser.Location = new System.Drawing.Point(119, 302);
+            this.btn_KelUser.Name = "btn_KelUser";
+            this.btn_KelUser.Size = new System.Drawing.Size(172, 46);
+            this.btn_KelUser.TabIndex = 1;
+            this.btn_KelUser.Text = "Kelola User";
+            this.btn_KelUser.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(154, 205);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Admin";
             // 
             // cb_Tipe
             // 
@@ -172,6 +188,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Tamabah";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -183,6 +200,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Edit";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -204,36 +222,34 @@
             this.alamat.Size = new System.Drawing.Size(180, 18);
             this.alamat.TabIndex = 8;
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Salmon;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Shopify;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Salmon;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 148;
-            this.iconPictureBox1.Location = new System.Drawing.Point(130, 45);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(148, 148);
-            this.iconPictureBox1.TabIndex = 5;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Red;
-            this.button5.ForeColor = System.Drawing.Color.Snow;
-            this.button5.Location = new System.Drawing.Point(119, 508);
+            this.button5.BackColor = System.Drawing.Color.Crimson;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Location = new System.Drawing.Point(134, 519);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 46);
-            this.button5.TabIndex = 6;
+            this.button5.Size = new System.Drawing.Size(144, 51);
+            this.button5.TabIndex = 9;
             this.button5.Text = "Logout";
             this.button5.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(538, 379);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(565, 227);
+            this.dataGridView1.TabIndex = 9;
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 641);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.alamat);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -252,6 +268,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +293,6 @@
         private System.Windows.Forms.TextBox alamat;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

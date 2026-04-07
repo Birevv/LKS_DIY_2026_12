@@ -48,6 +48,7 @@
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Waktu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aktivitas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.btn_Activity);
             this.panel1.Controls.Add(this.btn_KelLaporan);
@@ -68,6 +70,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(448, 856);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // iconPictureBox1
             // 
@@ -145,6 +148,7 @@
             this.label3.Size = new System.Drawing.Size(186, 38);
             this.label3.TabIndex = 3;
             this.label3.Text = "Logs Activity";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -166,6 +170,7 @@
             this.label4.Size = new System.Drawing.Size(72, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "08:30:00";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label6
             // 
@@ -254,6 +259,18 @@
             this.Aktivitas.MinimumWidth = 6;
             this.Aktivitas.Name = "Aktivitas";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(134, 614);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 51);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Logout";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FormLogActivity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -306,5 +323,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Waktu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Aktivitas;
+        private System.Windows.Forms.Button button1;
     }
 }

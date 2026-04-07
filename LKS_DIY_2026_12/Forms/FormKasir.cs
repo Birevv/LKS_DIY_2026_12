@@ -20,6 +20,22 @@ namespace LKS_DIY_2026_12.Forms
         private void FormKasir_Load(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
