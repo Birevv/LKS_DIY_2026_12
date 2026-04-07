@@ -14,24 +14,27 @@ namespace LKS_DIY_2026_12.Repositories
     public class UserRepository : BaseRepository<users>
     {
         // Login Logic
-        public users Login (string email, string password)
+        public users Login(string email, string password)
         {
             try
             {
-                using (IDbConnection db = Koneksi.GetConn())
+                using (SqlConnection db = Koneksi.GetConn())
                 {
-                    string query = @"SELECT * FROM users WHERE email = @email AND password = @password";
+                    string query = "SELECT * FROM users WHERE email = @Email AND password = @Password";
                     return db.QueryFirstOrDefault<users>(query, new { Email = email, Password = password });
+
                 }
             }
             catch (SqlException sqlEx)
             {
-                throw new Exception("Terjadi Kesalahan pada database: " + sqlEx.Message);
+                throw new Exception("Terjadi Kesalahan Pada Database : " + sqlEx.Message);
             }
             catch (Exception ex)
             {
-                throw new Exception("Terjadi Kesalahan " + ex.Message);
+                throw new Exception("Terjadi Kesalahan : " + ex.Message);
             }
         }
     }
 }
+
+

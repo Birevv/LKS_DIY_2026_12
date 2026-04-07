@@ -11,6 +11,7 @@ namespace LKS_DIY_2026_12.Models
     [Table("users")]
     public class users
     {
+        [Key]
         public int id { get; set; }
         public string tipe_user { get; set; }
         public string nama { get; set; }

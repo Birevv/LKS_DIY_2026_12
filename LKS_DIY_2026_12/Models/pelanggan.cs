@@ -10,6 +10,7 @@ namespace LKS_DIY_2026_12.Models
     [Table("pelanggan")]
     public class pelanggan
     {
+        [Key]
         public int id { get; set; }
         public string nama { get; set; }
         public string telepon { get; set; }

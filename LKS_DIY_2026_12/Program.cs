@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +16,9 @@ namespace LKS_DIY_2026_12
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            var loginForm = new Forms.FormLogin();
+            loginForm.Show();
+            Application.Run(loginForm);
         }
     }
 }

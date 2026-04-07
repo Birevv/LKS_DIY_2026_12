@@ -12,6 +12,7 @@ namespace LKS_DIY_2026_12.Models
 
     public class tbl_log
     {
+        [Key]
         public int id { get; set; }
         public DateTime waktu { get; set; }
         public string aktivitas { get; set; }

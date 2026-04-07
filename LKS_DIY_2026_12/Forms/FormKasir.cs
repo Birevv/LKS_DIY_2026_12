@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LKS_DIY_2026_12.Forms
 {
-    public partial class MainForm : Form
+    public partial class FormKasir : Form
     {
-        public MainForm()
+        public FormKasir(string nama)
         {
             InitializeComponent();
+        }
+
+        private void FormKasir_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

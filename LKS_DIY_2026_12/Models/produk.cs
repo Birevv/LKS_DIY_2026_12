@@ -11,6 +11,7 @@ namespace LKS_DIY_2026_12.Models
     [Table ("produk")]
     public class produk
     {
+        [Key]
         public int id { get; set; }
         public string kode_barang { get; set; }
         public string nama_barang { get; set; }

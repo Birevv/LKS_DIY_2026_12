@@ -59,17 +59,35 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormGudang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGudang.Designer.cs">
+      <DependentUpon>FormGudang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKasir.Designer.cs">
+      <DependentUpon>FormKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogActivity.Designer.cs">
+      <DependentUpon>FormLogActivity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Koneksi.cs" />
     <Compile Include="Helpers\SessionHelper.cs" />
@@ -82,7 +100,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\LogRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <EmbeddedResource Include="Forms\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGudang.resx">
+      <DependentUpon>FormGudang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormKasir.resx">
+      <DependentUpon>FormKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogActivity.resx">
+      <DependentUpon>FormLogActivity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>

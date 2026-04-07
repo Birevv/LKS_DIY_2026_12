@@ -11,6 +11,7 @@ namespace LKS_DIY_2026_12.Models
     [Table("detail_transaksi")]
     public class detail_transaksi
     {
+        [Key]
         public int id { get; set; } 
         public int transaksi_id { get; set; }   
         public int produk_id { get; set;  }

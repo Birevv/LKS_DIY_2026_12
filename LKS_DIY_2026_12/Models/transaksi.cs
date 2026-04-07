@@ -10,6 +10,7 @@ namespace LKS_DIY_2026_12.Models
     [Table("transaksi")]
     public class transaksi
     {
+        [Key]
         public int id { get; set; }
         public string no_transaksi { get; set; }
         public DateTime tgl_transakasi { get; set; }
